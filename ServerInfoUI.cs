@@ -16,6 +16,14 @@ namespace Oxide.Plugins
             ShowUI(player);
         }
 
+        private void Unload()
+        {
+            foreach (var player in BasePlayer.activePlayerList)
+            {
+                CuiHelper.DestroyUi(player, UiName);
+            }
+        }
+
         private void ShowUI(BasePlayer player)
         {
             CuiHelper.DestroyUi(player, UiName);
