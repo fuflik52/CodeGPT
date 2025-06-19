@@ -9,6 +9,7 @@ namespace Oxide.Plugins
     public class ServerInfoUI : RustPlugin
     {
         private const string UiName = "Dota/info";
+        private const string BackgroundName = "Dota/info_bg";
 
         [ChatCommand("info")]
         private void CmdInfo(BasePlayer player, string command, string[] args)
@@ -21,13 +22,26 @@ namespace Oxide.Plugins
             foreach (var player in BasePlayer.activePlayerList)
             {
                 CuiHelper.DestroyUi(player, UiName);
+                CuiHelper.DestroyUi(player, BackgroundName);
             }
         }
 
         private void ShowUI(BasePlayer player)
         {
             CuiHelper.DestroyUi(player, UiName);
+            CuiHelper.DestroyUi(player, BackgroundName);
             var container = new CuiElementContainer();
+
+            container.Add(new CuiElement
+            {
+                Name = BackgroundName,
+                Parent = "Overlay",
+                Components =
+                {
+                    new CuiImageComponent { Color = "0 0 0 0.62" },
+                    new CuiRectTransformComponent { AnchorMin = "0 0", AnchorMax = "1 1" }
+                }
+            });
 
             container.Add(new CuiElement
             {
@@ -340,7 +354,7 @@ namespace Oxide.Plugins
             {
                 Parent = UiName,
                 Components = {
-                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "0.8156863 0.7764706 0.7411765 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
+                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "1 1 1 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
                     new CuiRectTransformComponent { AnchorMin = "0 1", AnchorMax = "0 1", OffsetMin = "43.333 -73.333", OffsetMax = "94 -58" }
                 }
             });
@@ -349,7 +363,7 @@ namespace Oxide.Plugins
             {
                 Parent = UiName,
                 Components = {
-                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "0.8156863 0.7764706 0.7411765 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
+                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "1 1 1 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
                     new CuiRectTransformComponent { AnchorMin = "0 1", AnchorMax = "0 1", OffsetMin = "43.333 -116.667", OffsetMax = "94 -101.333" }
                 }
             });
@@ -358,7 +372,7 @@ namespace Oxide.Plugins
             {
                 Parent = UiName,
                 Components = {
-                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "0.8156863 0.7764706 0.7411765 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
+                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "1 1 1 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
                     new CuiRectTransformComponent { AnchorMin = "0 1", AnchorMax = "0 1", OffsetMin = "43.333 -160", OffsetMax = "94 -144.667" }
                 }
             });
@@ -367,7 +381,7 @@ namespace Oxide.Plugins
             {
                 Parent = UiName,
                 Components = {
-                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "0.8156863 0.7764706 0.7411765 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
+                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "1 1 1 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
                     new CuiRectTransformComponent { AnchorMin = "0 1", AnchorMax = "0 1", OffsetMin = "43.333 -203.333", OffsetMax = "94 -188" }
                 }
             });
@@ -376,7 +390,7 @@ namespace Oxide.Plugins
             {
                 Parent = UiName,
                 Components = {
-                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "0.8156863 0.7764706 0.7411765 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
+                    new CuiTextComponent { Text = "Главная", Align = TextAnchor.MiddleCenter, Color = "1 1 1 1", FontSize = 13, Font = "Roboto-Bold.ttf" },
                     new CuiRectTransformComponent { AnchorMin = "0 1", AnchorMax = "0 1", OffsetMin = "43.333 -248", OffsetMax = "94 -232.667" }
                 }
             });
