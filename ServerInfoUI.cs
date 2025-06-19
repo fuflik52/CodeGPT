@@ -1,5 +1,6 @@
 using Oxide.Game.Rust.Cui;
 using Oxide.Core;
+using Oxide.Core.Plugins;
 using UnityEngine;
 
 namespace Oxide.Plugins
