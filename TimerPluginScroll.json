@@ -1,0 +1,36 @@
+{
+  "DefaultTimerSeconds": 30,
+  "MaxTimerSeconds": 3600,
+  "AnimationSpeed": 0.08,
+  "AnimationInterval": 0.03,
+  "UISettings": {
+    "PanelPosition": {
+      "AnchorMin": "0.5 0.92",
+      "AnchorMax": "0.5 0.98"
+    },
+    "TextColor": "1 0.8 0 1",
+    "BackgroundColor": "0.05 0.05 0.05 0.95",
+    "BorderColor": "1 0.8 0 1",
+    "FontSize": {
+      "Title": 12,
+      "Number": 28
+    }
+  },
+  "Messages": {
+    "TimerStarted": "Таймер запущен! Ивент начнется через {0} секунд.",
+    "TimerStopped": "Таймер остановлен!",
+    "TimerReset": "Таймер сброшен!",
+    "EventStarted": "🎉 Ивент начался! 🎉",
+    "NoPermission": "У вас нет прав для использования этой команды!",
+    "TimerAlreadyRunning": "Таймер уже запущен!",
+    "InvalidTime": "Неверное значение времени! Используйте число от 1 до 3600.",
+    "UsageSetTime": "Использование: /settime <секунды>"
+  },
+  "Commands": {
+    "StartTimer": "starttimer",
+    "StopTimer": "stoptimer",
+    "ResetTimer": "resettimer",
+    "SetTime": "settime",
+    "Help": "timerhelp"
+  }
+}
