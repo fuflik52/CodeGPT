@@ -1,0 +1,61 @@
+{
+  "Default Timer Seconds": 30,
+  "Max Timer Seconds": 3600,
+  "Animation Speed": 0.08,
+  "Animation Interval": 0.03,
+  "Enable Sound Effects": true,
+  "Enable Particle Effects": false,
+  "UI Themes": {
+    "default": {
+      "Name": "Default",
+      "Text Color": "1 0.8 0 1",
+      "Background Color": "0.05 0.05 0.05 0.95",
+      "Border Color": "1 0.8 0 1",
+      "Title Font Size": 12,
+      "Number Font Size": 28
+    },
+    "dark": {
+      "Name": "Dark",
+      "Text Color": "0.8 0.8 0.8 1",
+      "Background Color": "0.02 0.02 0.02 0.98",
+      "Border Color": "0.5 0.5 0.5 1",
+      "Title Font Size": 12,
+      "Number Font Size": 28
+    },
+    "neon": {
+      "Name": "Neon",
+      "Text Color": "0 1 1 1",
+      "Background Color": "0.1 0.1 0.2 0.9",
+      "Border Color": "0 1 1 1",
+      "Title Font Size": 12,
+      "Number Font Size": 28
+    },
+    "fire": {
+      "Name": "Fire",
+      "Text Color": "1 0.4 0 1",
+      "Background Color": "0.2 0.05 0.05 0.95",
+      "Border Color": "1 0.4 0 1",
+      "Title Font Size": 12,
+      "Number Font Size": 28
+    },
+    "ice": {
+      "Name": "Ice",
+      "Text Color": "0.4 0.8 1 1",
+      "Background Color": "0.05 0.1 0.2 0.95",
+      "Border Color": "0.4 0.8 1 1",
+      "Title Font Size": 12,
+      "Number Font Size": 28
+    }
+  },
+  "Messages": {
+    "TimerStarted": "Таймер запущен! Ивент начнется через {0} секунд.",
+    "TimerStopped": "Таймер остановлен!",
+    "TimerReset": "Таймер сброшен!",
+    "EventStarted": "🎉 Ивент начался! 🎉",
+    "NoPermission": "У вас нет прав для использования этой команды!",
+    "TimerAlreadyRunning": "Таймер уже запущен!",
+    "InvalidTime": "Неверное значение времени! Используйте число от 1 до 3600.",
+    "UsageSetTime": "Использование: /settime <секунды>",
+    "ThemeChanged": "Тема изменена на: {0}"
+  }
+}
