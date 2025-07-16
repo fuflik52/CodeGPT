@@ -1,0 +1,34 @@
+{
+  "DefaultTimerSeconds": 30,
+  "AnimationSpeed": 0.1,
+  "AnimationInterval": 0.05,
+  "UISettings": {
+    "PanelColor": "0.1 0.1 0.1 0.9",
+    "BorderColor": "1 0.8 0 1",
+    "TextColor": "1 1 1 0.8",
+    "NumberColor": "1 0.8 0 1",
+    "OldNumberColor": "1 0.8 0 0.5",
+    "FontSize": {
+      "Text": 12,
+      "Number": 28
+    },
+    "Position": {
+      "AnchorMin": "0.5 0.92",
+      "AnchorMax": "0.5 0.98"
+    }
+  },
+  "Messages": {
+    "TimerStarted": "Таймер запущен! Ивент начнется через {0} секунд.",
+    "TimerStopped": "Таймер остановлен!",
+    "TimerReset": "Таймер сброшен!",
+    "EventStarted": "Ивент начался!",
+    "TimerAlreadyRunning": "Таймер уже запущен!",
+    "InvalidTime": "Неверное значение времени!",
+    "TimeSet": "Время установлено на {0} секунд.",
+    "UsageSetTime": "Использование: /settime <секунды>"
+  },
+  "Permissions": {
+    "UseTimer": "timerplugin.use",
+    "AdminTimer": "timerplugin.admin"
+  }
+}
